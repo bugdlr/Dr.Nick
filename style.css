@@ -1,39 +1,41 @@
 body {
-  height: 100vh;
-  background-image: url(photos/diego-jimenez-258120-unsplash.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-family: lato;
-  text-align: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-/*TO DO*/
-/*center image when page is small*/
-
-html {
-  height: 100%;
+.navbar-collapse {
+  flex-grow: 0;
 }
 
-#content {
-  text-align: center;
-  padding-top: 25%;
-  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-               0px 8px 13px rgba(0,0,0,0.1),
-               0px 18px 23px rgba(0,0,0,0.1);
+#header {
+  background: url("photos/diego-jimenez-258120-unsplash.jpg") center center / cover no-repeat;
 }
 
-h1 {
-  font-weight: 700;
-  font-size: 5em;
-  color: white;
+.main-content {
+  background-color: #fffcf7;
 }
 
-hr {
-  width: 400px;
-  border-top: 1px solid #f8f8f8;
-  border-bottom: 1px solid rgba(0,0,0,0.2)
+.btn {
+  text-transform: uppercase;
+}
+/*
+ul {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 1.2em;
+  text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+  color: #fff;
+}*/
+
+@media (min-width: 1000px) {
+  ul {
+    max-width: 700px;
+  }
 }
 
-.container {
-  color: white;
+
+img {
+  max-height: 250px;
+  width: auto;
 }

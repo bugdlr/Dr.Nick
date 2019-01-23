@@ -6,41 +6,76 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
-    <style media="screen">
-      #header {
-        background: url("photos/diego-jimenez-258120-unsplash.jpg") center center / cover no-repeat;
-      }
-    </style>
 
     <title>Dr. Nick De Los Reyes</title>
 </head>
 
 <body>
 
-  <nav class="nav navbar-dark bg-dark flex-column flex-sm-row align-items-center justify-content-sm-around">
+  <nav class="nav nav-bar navbar-dark bg-dark navbar-expand-md justify-content-around">
       <a class="navbar-brand" href="#">Nick De Los Reyes, Ph.D.</a>
-      <div class="nav-links d-flex flex-column flex-sm-row align-items-center">
-        <a class="nav-link text-light" href="#">About</a>
-        <a class="nav-link text-light" href="#">Contact</a>
-      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+    <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+      <ul class="navbar-nav d-flex align-items-center decoration-none">
+        <li><a class="nav-link text-light" href="#">Services</a></li>
+        <li><a class="nav-link text-light" href="#">About</a></li>
+        <li><a class="nav-link text-light" href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    </ul>
   </nav>
 
-  <section id="header" class="jumbotron text-center text-light">
-    <h1 class="display-3">Dr. Nick</h1>
-      <ul class="d-flex flex-column align-items-center flex-md-row justify-content-md-around mx-md-6">
-        <li>Clinical Psychology</li>
-        <li>Marriage and Family Counseling</li>
-        <li>Spiritual Direction</li>
-      </ul>
-    <a href="#" class="btn btn-info">Learn More</a>
+  <section id="header" class="jumbotron text-center text-light mb-0">
+    <blockquote class="blockquote pt-3">
+      <p>"A journey of a thousand miles begins with a single step."</p>
+      <footer class="blockquote-footer text-light">Lao Tzu</footer>
+    </blockquote>
+    <a href="#" class="btn btn-info my-3">Start Your Journey</a>
   </section>
 
-    <!-- Optional JavaScript -->
+<div class="container main-content">
+  <h3 class="text-center pt-4">Therapy in Tucson, AZ, for Individuals, Couples, and Families</h3>
+  <ul class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-between mx-auto list-unstyled pt-3">
+    <li>Clinical Psychology</li>
+    <li>Marriage and Family Counseling</li>
+    <li>Spiritual Direction</li>
+  </ul>
+
+  <div class="container d-flex flex-wrap p-3 flex-md-nowrap align-items-center">
+    <img src="photos/denys-nevozhai-191635-unsplash.jpg" alt="woman sitting on a rock, facing away, looking toward the sunset" class="rounded mx-auto order-md-2">
+    <p class="p-4">Spiritual direction is the art of helping a person with his or her relationship with God. Spiritual direction proposes to help people relate personally to God, to let God relate personally to them, and to enable them to live within that relationship. The focus of spiritual direction is always the relationship between the person and God. Spiritual direction is confidential, compassionate, non-judgmental, and non-dogmatic. It proceeds at the pace the person finds comfortable.</p>
+  </div>
+
+  <div class="container d-flex flex-wrap p-3 flex-md-nowrap align-items-center">
+    <img src="photos/ethan-sykes-222962-unsplash.jpg" alt="winding mountain road from above" class="rounded mx-auto">
+    <p class="p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum totam quod, aliquid quasi sapiente nostrum atque cupiditate, eum consequuntur illum sit aliquam. Rem placeat at tempore perspiciatis, odio omnis aperiam inventore, sint incidunt cupiditate, modi dicta iure suscipit dolore quod.</p>
+  </div>
+
+  <div class="container d-flex flex-wrap p-3 flex-md-nowrap align-items-center">
+    <img src="photos/headshot.jpg" alt="headshot of Dr.Nick" class="mx-auto rounded-circle order-md-2">
+    <p class="p-4">I left active practice as a Licensed Clinical Psychologist (PSY9246) and Licensed Marriage & Family Therapist (MFT13850) in California. I now reside in Tucson, Arizona and practice as a Spiritual Director.</p>
+  </div>
+</div>
+
+
+<div class="container-fluid bg-info text-light text-center p-4">
+  <p class="h4">Have Questions? Ready to get started? Contact me today.</p>
+  <p class="h5"><i class="fas fa-phone"></i> 562-547-0910</p>
+  <p class="h5"><i class="far fa-envelope"></i> nick.delosreyes@gmail.com</p>
+</div>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -48,6 +83,7 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <script src="http://localhost:35729/livereload.js"></script>
 </body>
 
 </html>
