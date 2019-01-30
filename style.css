@@ -14,18 +14,50 @@ html {
 }
 
 #header {
-  background: url("photos/diego-jimenez-258120-unsplash.jpg") center center / cover no-repeat;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("photos/diego-jimenez-258120-unsplash.jpg") center center / cover no-repeat;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("photos/diego-jimenez-258120-unsplash.jpg") center center / cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("photos/diego-jimenez-258120-unsplash.jpg") center center / cover no-repeat;
 }
-
-
-@media (min-width: 1000px) {
-  ul {
-    max-width: 700px;
-  }
-}
-
 
 img {
   max-height: 250px;
   width: auto;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.main-content li {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.address p {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+@media (max-width: 576px) {
+  .headline {
+    font-size: 1.5rem;
+  }
+  .main-content li {
+    font-size: 1.1rem;
+  }
+  .nav a {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  ul {
+    max-width: 700px;
+  }
+  p {
+    line-height: 1.6;
+    font-size: 1rem;
+  }
 }
