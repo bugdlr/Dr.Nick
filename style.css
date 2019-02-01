@@ -24,6 +24,11 @@ img {
   width: auto;
 }
 
+#services-pic {
+  min-width: 220px;
+  max-width: 220px;
+}
+
 p {
   line-height: 1.6;
   font-size: 1.1rem;
